@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "418379857597",
+    "firebase_url": "https://testauthentication-f8cdf.firebaseio.com",
+    "project_id": "testauthentication-f8cdf",
+    "storage_bucket": "testauthentication-f8cdf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:418379857597:android:864bc12568c7a9d41281d4",
+        "android_client_info": {
+          "package_name": "com.example.testauthentication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "418379857597-dingpesgphuntbrvi27bklmeou3e7t2n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATVLKju-hP_pKXhYs8TlBtzam4e13QMBI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "418379857597-dingpesgphuntbrvi27bklmeou3e7t2n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
