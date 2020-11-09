@@ -1,10 +1,8 @@
 package com.example.testauthentication
 
 import android.app.Activity
-import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.view.inputmethod.InputMethodManager
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
@@ -19,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         auth = Firebase.auth
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        buttonSignUp.setOnClickListener {
+        buttonSignIn.setOnClickListener {
             (this.getSystemService(Activity.INPUT_METHOD_SERVICE) as InputMethodManager).hideSoftInputFromWindow(it.windowToken, 0)
 
             if (editTextEmail.text.toString().isNullOrEmpty() || editTextPassword.text.toString()
@@ -32,11 +30,11 @@ class MainActivity : AppCompatActivity() {
                         .addOnCompleteListener(this) { task ->
                             if (task.isSuccessful) {
                                 textViewResponse.text =
-                                        "Sign Up successfull. Email and Password created"
+                                        "Sign In successfull. Email and Password created"
                                  user = auth.currentUser
                                 updateUI(user)
                             } else {
-                                textViewResponse.text = "Sign Up Failed"
+                                textViewResponse.text = "Sign In Failed"
                                 updateUI(null)
                             }
                         }
